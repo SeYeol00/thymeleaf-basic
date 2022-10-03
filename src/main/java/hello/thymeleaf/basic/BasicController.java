@@ -54,7 +54,7 @@ public class BasicController {
 
     @GetMapping("/basic-objects")
     public String basicObjects(HttpSession session){
-        //세션 접근법
+        //세션 접근법, 로그인 할 때 사용한다.
         session.setAttribute("sesstionData","Hello Session");
         return "basic/basic-objects";
     }
